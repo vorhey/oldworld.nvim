@@ -1,5 +1,5 @@
 set default-fg                "#c9c7cd"
-set default-bg 			          "#161617"
+set default-bg 			          "#NONE"
 
 set completion-bg		          "#1b1b1c"
 set completion-fg		          "#c9c7cd"
@@ -21,15 +21,15 @@ set notification-warning-fg	  "#f5a191"
 set inputbar-fg			          "#c9c7cd"
 set inputbar-bg 		          "#1b1b1c"
 
-set recolor-lightcolor		    "#161617"
+set recolor-lightcolor		    "#NONE"
 set recolor-darkcolor		      "#c9c7cd"
 
 set index-fg			            "#c9c7cd"
-set index-bg			            "#161617"
+set index-bg			            "#NONE"
 set index-active-fg		        "#c9c7cd"
 set index-active-bg		        "#1b1b1c"
 
-set render-loading-bg		      "#161617"
+set render-loading-bg		      "#NONE"
 set render-loading-fg		      "#c9c7cd"
 
 set highlight-color		        "#313134"
