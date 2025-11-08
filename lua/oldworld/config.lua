@@ -2,7 +2,7 @@ local config = {}
 
 local default_config = {
     terminal_colors = true,
-    variants = "default",
+    variant = "light",
     styles = {
         comments = {},
         keywords = {},
@@ -57,6 +57,8 @@ function config.setup(opts)
                         vim.tbl_deep_extend("keep", default_config.styles[style_key], style_value)
                 end
             end
+        elseif k == "variant" or k == "variants" then
+            config.variant = v
         else
             config[k] = v
         end
