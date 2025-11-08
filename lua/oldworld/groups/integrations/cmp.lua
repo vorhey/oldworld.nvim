@@ -13,5 +13,5 @@ return {
     CmpItemKindField = { fg = p.magenta },
     CmpItemKindConstant = { fg = p.orange },
     CmpItemKindMethod = { fg = p.cyan },
-    CmpBorder = { fg = p.gray3 },
+    CmpBorder = { fg = p.border },
 }

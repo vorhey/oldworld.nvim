@@ -10,16 +10,16 @@ local styles = vim.tbl_map(function(value)
 end, config.styles)
 
 return {
-    Comment = { fg = p.subtext3 } + styles.comments, -- any comment
+    Comment = { fg = p.comment, italic = false } + styles.comments, -- any comment
     Constant = { fg = p.red }, -- any constant
-    String = { fg = p.green }, -- a string constant: "this is a string"
+    String = { fg = p.soft_lavender } + styles.strings, -- a string constant: "this is a string"
     Character = { fg = p.green }, -- a character constant: 'p', '\n'
     Number = { fg = p.magenta }, -- a number constant: 234, 0xff
     Boolean = { fg = p.yellow } + styles.booleans, -- a boolean constant: TRUE, false
     Float = { fg = p.magenta }, -- a floating point constant: 2.3e10
-    Identifier = { fg = p.fg } + styles.identifiers, -- any variable name
+    Identifier = { fg = p.pastel_orchid } + styles.identifiers, -- any variable name
     Function = { fg = p.blue } + styles.functions, -- function name (also: methods for classes)
-    Statement = { fg = p.fg }, -- any statement
+    Statement = { fg = p.muted_purple }, -- any statement
     Conditional = { fg = p.blue }, -- if, then, else, endif, switch, etc.
     Repeat = { fg = p.purple }, -- for, do, while, etc.
     Label = { fg = p.purple }, -- case, default, etc.
@@ -31,7 +31,7 @@ return {
     Define = { fg = p.red }, -- preprocessor #define
     Macro = { fg = p.red }, -- same as Define
     PreCondit = { fg = p.red }, -- preprocessor #if, #else, #endif, etc.
-    Type = { fg = p.yellow }, -- int, long, char, etc.
+    Type = { fg = p.muted_purple } + styles.types, -- int, long, char, etc.
     StorageClass = { fg = p.yellow }, -- static, register, volatile, etc.
     Structure = { fg = p.red }, -- struct, union, enum, etc.
     Typedef = { fg = p.yellow }, -- A typedef

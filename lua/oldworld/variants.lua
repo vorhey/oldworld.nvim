@@ -9,6 +9,12 @@ end
 local base_palette = {
 	bg = "NONE",
 	fg = "#c9c7cd",
+	muted_purple = "#747991",
+	soft_lavender = "#897e96",
+	pastel_orchid = "#be93c2",
+	comment = "#989898",
+	selection = "#e3e4ff",
+	border = "#3d3d3d",
 	subtext1 = "#b4b1ba",
 	subtext2 = "#9f9ca6",
 	subtext3 = "#8b8693",
@@ -30,6 +36,18 @@ local base_palette = {
 	gray4 = "#3b3b3e",
 	gray5 = "#444448",
 	none = "NONE",
+	kind_green = "#82ffac",
+	kind_gold = "#ffd700",
+	kind_purple = "#d7c6f7",
+	soft_yellow = "#fff3cc",
+	soft_red = "#f79292",
+	rose = "#ff9ea8",
+	navy = "#214283",
+	link = "#3f51b5",
+	periwinkle = "#aaa4e5",
+	jade = "#54d6a2",
+	parameter = "#747991",
+	code_block = "#f5f5f5",
 }
 
 local palettes = {
