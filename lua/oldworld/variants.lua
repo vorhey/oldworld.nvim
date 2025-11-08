@@ -47,7 +47,6 @@ local base_palette = {
 	periwinkle = "#aaa4e5",
 	jade = "#54d6a2",
 	parameter = "#747991",
-	code_block = "#f5f5f5",
 }
 
 local palettes = {

@@ -1,8 +1,8 @@
 local p = require("oldworld.palette")
 
 return {
-    RenderMarkdownCode = { bg = p.code_block },
-    RenderMarkdownCodeInline = { bg = p.code_block, fg = p.muted_purple },
+    RenderMarkdownCode = { bg = p.bg, blend = 10 },
+    RenderMarkdownCodeInline = { bg = p.bg, fg = p.muted_purple, blend = 10 },
     RenderMarkdownBullet = { fg = p.cyan },
     RenderMarkdownH1Bg = { bg = "#fce4ec", fg = "#c2185b" },
     RenderMarkdownH2Bg = { bg = "#f3e5f5", fg = "#7b1fa2" },
