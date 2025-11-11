@@ -58,7 +58,7 @@ return {
 	["@markup.link.label"] = { fg = p.link },
 	["@markup.link.url"] = { fg = p.link, underline = true },
 	["@markup.list"] = { fg = p.muted_purple },
-	["@markup.list.checked"] = { fg = p.kind_green },
+	["@markup.list.checked"] = { fg = p.kind_indigo },
 	["@markup.list.unchecked"] = { fg = p.muted_purple },
 	["@markup.raw.delimiter"] = { fg = p.muted_purple },
 	["@markup.quote"] = { fg = p.comment, italic = true },
