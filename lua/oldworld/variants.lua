@@ -36,7 +36,6 @@ local base_palette = {
 	gray4 = "#3b3b3e",
 	gray5 = "#444448",
 	none = "NONE",
-	kind_indigo = "#3CA60F",
 	kind_gold = "#ffd700",
 	kind_purple = "#d7c6f7",
 	kind_indigo = "#4b6cb7",
@@ -54,6 +53,21 @@ local palettes = {
 	dark = base_palette,
 	light = clone(base_palette),
 }
+
+-- Tune the light palette so gray-leaning accents stay readable on bright backgrounds.
+local light = palettes.light
+light.fg = "#6f6d71"
+light.muted_purple = "#575b6d"
+light.parameter = light.muted_purple
+light.soft_lavender = "#675e70"
+light.pastel_orchid = "#856788"
+light.comment = "#6a6a6a"
+light.selection = "#c7cbff"
+light.subtext1 = "#757379"
+light.subtext2 = "#6f6d74"
+light.subtext3 = "#68646e"
+light.subtext4 = "#615e68"
+light.periwinkle = "#6f6a95"
 
 return function(variant)
 	return palettes[variant] or palettes.dark
