@@ -51,7 +51,7 @@ The theme will use the default values unless you change the default configuratio
 ```lua
 local default_config = {
     terminal_colors = true, -- enable terminal colors
-    variant = "light", -- default is light; dark reuses the same palette
+    variant = "light", -- default is light; dark uses a richer palette for dark backgrounds
     styles = { -- You can pass the style using the format: style = true
         comments = {}, -- style for comments
         keywords = {}, -- style for keywords
@@ -93,7 +93,7 @@ local default_config = {
 }
 ```
 
-Only `dark` and `light` variants are available. The default `light` mode uses the palette as-is, while `dark` flips Neovim to `:set background=dark` with the same colors.
+Only `dark` and `light` variants are available. `light` keeps the original soft palette, while `dark` applies a dedicated set of deeper backgrounds and brighter accents for better contrast on dark setups.
 
 To configure a setting, you should pass that setting with the changed value following the structure of the default configuration.
 

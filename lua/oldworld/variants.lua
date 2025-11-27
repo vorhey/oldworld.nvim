@@ -1,12 +1,4 @@
-local function clone(tbl)
-	local copy = {}
-	for k, v in pairs(tbl) do
-		copy[k] = v
-	end
-	return copy
-end
-
-local base_palette = {
+local light_palette = {
 	bg = "NONE",
 	fg = "#c9c7cd",
 	muted_purple = "#747991",
@@ -49,9 +41,52 @@ local base_palette = {
 	parameter = "#747991",
 }
 
+local dark_palette = {
+	bg = "#11111a",
+	fg = "#e4e1ec",
+	muted_purple = "#d6d2df",
+	soft_lavender = "#bfb8cf",
+	pastel_orchid = "#dcb6df",
+	comment = "#a19cac",
+	selection = "#2e2b3c",
+	border = "#3a3947",
+	subtext1 = "#cbc7d3",
+	subtext2 = "#b4afbd",
+	subtext3 = "#9d97a8",
+	subtext4 = "#7d7688",
+	bg_dark = "#0b0b12",
+	black = "#09090f",
+	red = "#f29ab5",
+	green = "#9cc7ae",
+	yellow = "#efc7a2",
+	purple = "#b9b1e2",
+	magenta = "#ecb2d8",
+	orange = "#f6b49a",
+	blue = "#a3b6e7",
+	cyan = "#94c8cd",
+	gray0 = "#0c0c12",
+	gray1 = "#14141c",
+	gray2 = "#1c1c25",
+	gray3 = "#262633",
+	gray4 = "#303042",
+	gray5 = "#3b3b4b",
+	none = "NONE",
+	kind_gold = "#ffd88a",
+	kind_purple = "#d9cef8",
+	kind_indigo = "#5c7ad6",
+	soft_yellow = "#fff0c2",
+	soft_red = "#f7a6ab",
+	rose = "#ff9ea8",
+	navy = "#223163",
+	link = "#6f90e6",
+	periwinkle = "#b6b1ef",
+	jade = "#63e0b1",
+	parameter = "#d6d2df",
+}
+
 local palettes = {
-	dark = base_palette,
-	light = clone(base_palette),
+	light = light_palette,
+	dark = dark_palette,
 }
 
 -- Tune the light palette so gray-leaning accents stay readable on bright backgrounds.
