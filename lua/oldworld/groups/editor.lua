@@ -47,7 +47,7 @@ return {
 	PmenuThumb = { bg = p.gray3 }, -- Popup menu: Thumb of the scrollbar.
 	Question = { fg = p.purple }, -- hit-enter prompt and yes/no questions
 	QuickFixLine = { fg = p.red, bg = p.gray2 }, -- Current quickfix item in the quickfix window.
-	Search = { fg = p.black, bg = p.jade }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+	Search = { fg = p.black, bg = p.kind_purple }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
 	Substitute = { fg = custom.text, bg = custom.search },
 	SpecialKey = { fg = p.subtext2 }, -- Meta and special keys listed with  =map, also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
 	SpellBad = { fg = p.orange, underline = true }, -- Word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.

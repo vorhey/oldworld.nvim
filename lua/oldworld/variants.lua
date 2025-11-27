@@ -41,7 +41,7 @@ local light_palette = {
 }
 
 local dark_palette = {
-	bg = "#11111a",
+	bg = "NONE",
 	fg = "#e4e1ec",
 	muted_purple = "#d6d2df",
 	soft_lavender = "#bfb8cf",
