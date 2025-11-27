@@ -7,7 +7,7 @@ local custom = {
 	text = p.muted_purple or "#747991",
 	selection = p.selection or "#e3e4ff",
 	border = p.border or p.gray3,
-	search = p.soft_yellow or "#fff3cc",
+	search = p.navy,
 }
 
 return {
