@@ -38,6 +38,7 @@ local light_palette = {
 	periwinkle = "#aaa4e5",
 	jade = "#54d6a2",
 	parameter = "#747991",
+	white = "#ffffff",
 }
 
 local dark_palette = {
@@ -80,6 +81,7 @@ local dark_palette = {
 	periwinkle = "#b6b1ef",
 	jade = "#63e0b1",
 	parameter = "#d6d2df",
+	white = "#ffffff",
 }
 
 local palettes = {
