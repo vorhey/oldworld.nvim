@@ -1,4 +1,109 @@
 local config = require("oldworld.config")
-local get_palette = require("oldworld.variants")
 
-return get_palette(config.variant)
+local light_palette = {
+	bg = "NONE",
+	fg = "#c9c7cd",
+	muted_purple = "#747991",
+	soft_lavender = "#897e96",
+	pastel_orchid = "#be93c2",
+	comment = "#989898",
+	selection = "#e3e4ff",
+	border = "#3d3d3d",
+	subtext1 = "#b4b1ba",
+	subtext2 = "#9f9ca6",
+	subtext3 = "#8b8693",
+	subtext4 = "#6c6874",
+	bg_dark = "#131314",
+	black = "#27272a",
+	red = "#ea83a5",
+	green = "#90b99f",
+	yellow = "#e6b99d",
+	purple = "#7c59ba",
+	magenta = "#e29eca",
+	orange = "#f5a191",
+	blue = "#4b6cb7",
+	cyan = "#85b5ba",
+	gray0 = "#18181a",
+	gray1 = "#1b1b1c",
+	gray2 = "#2a2a2c",
+	gray3 = "#313134",
+	gray4 = "#3b3b3e",
+	gray5 = "#444448",
+	none = "NONE",
+	kind_gold = "#ffd700",
+	kind_purple = "#d7c6f7",
+	kind_indigo = "#4b6cb7",
+	soft_red = "#f79292",
+	rose = "#ff9ea8",
+	navy = "#214283",
+	link = "#5d82d9",
+	periwinkle = "#aaa4e5",
+	jade = "#54d6a2",
+	parameter = "#747991",
+	white = "#ffffff",
+}
+
+local dark_palette = {
+	bg = "NONE",
+	fg = "#e4e1ec",
+	muted_purple = "#d6d2df",
+	soft_lavender = "#bfb8cf",
+	pastel_orchid = "#dcb6df",
+	comment = "#a19cac",
+	selection = "#2e2b3c",
+	border = "#3a3947",
+	subtext1 = "#cbc7d3",
+	subtext2 = "#b4afbd",
+	subtext3 = "#9d97a8",
+	subtext4 = "#7d7688",
+	bg_dark = "#0b0b12",
+	black = "#09090f",
+	red = "#f29ab5",
+	green = "#9cc7ae",
+	yellow = "#efc7a2",
+	purple = "#b9b1e2",
+	magenta = "#ecb2d8",
+	orange = "#f6b49a",
+	blue = "#a3b6e7",
+	cyan = "#94c8cd",
+	gray0 = "#0c0c12",
+	gray1 = "#14141c",
+	gray2 = "#1c1c25",
+	gray3 = "#262633",
+	gray4 = "#303042",
+	gray5 = "#3b3b4b",
+	none = "NONE",
+	kind_gold = "#ffd88a",
+	kind_purple = "#d9cef8",
+	kind_indigo = "#5c7ad6",
+	soft_red = "#f7a6ab",
+	rose = "#ff9ea8",
+	navy = "#223163",
+	link = "#6f90e6",
+	periwinkle = "#b6b1ef",
+	jade = "#63e0b1",
+	parameter = "#d6d2df",
+	white = "#ffffff",
+}
+
+local palettes = {
+	light = light_palette,
+	dark = dark_palette,
+}
+
+-- Tune the light palette so gray-leaning accents stay readable on bright backgrounds.
+local light = palettes.light
+light.fg = "#6f6d71"
+light.muted_purple = "#575b6d"
+light.parameter = light.muted_purple
+light.soft_lavender = "#675e70"
+light.pastel_orchid = "#856788"
+light.comment = "#6a6a6a"
+light.selection = "#c7cbff"
+light.subtext1 = "#757379"
+light.subtext2 = "#6f6d74"
+light.subtext3 = "#68646e"
+light.subtext4 = "#615e68"
+light.periwinkle = "#6f6a95"
+
+return palettes[config.variant] or palettes.dark
