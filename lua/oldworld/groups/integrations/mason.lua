@@ -16,10 +16,10 @@ return {
 
     MasonMuted = { fg = p.subtext1 },
     MasonMutedBlock = { bg = p.bg, fg = p.subtext3, bold = true },
-    MasonMutedBlockBold = { bg = p.yellow, fg = p.bg, bold = true },
+    MasonMutedBlockBold = { bg = p.dark_purple, fg = p.bg, bold = true },
 
     MasonError = { fg = p.red },
-    MasonWarning = { fg = p.yellow },
+    MasonWarning = { fg = p.dark_purple },
 
     MasonHeading = { fg = p.magenta, bold = true },
 }

@@ -2,7 +2,7 @@ local p = require("oldworld.palette")
 
 return {
     NavicIconsFile = { fg = p.fg, bg = p.none },
-    NavicIconsModule = { fg = p.yellow, bg = p.none },
+    NavicIconsModule = { fg = p.dark_purple, bg = p.none },
     NavicIconsNamespace = { fg = p.fg, bg = p.none },
     NavicIconsPackage = { fg = p.fg, bg = p.none },
     NavicIconsClass = { fg = p.red, bg = p.none },
@@ -17,7 +17,7 @@ return {
     NavicIconsConstant = { fg = p.magenta, bg = p.none },
     NavicIconsString = { fg = p.green, bg = p.none },
     NavicIconsNumber = { fg = p.red, bg = p.none },
-    NavicIconsBoolean = { fg = p.yellow, bg = p.none },
+    NavicIconsBoolean = { fg = p.dark_purple, bg = p.none },
     NavicIconsArray = { fg = p.subtext1, bg = p.none },
     NavicIconsObject = { fg = p.subtext1, bg = p.none },
     NavicIconsKey = { fg = p.purple, bg = p.none },

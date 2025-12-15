@@ -28,11 +28,11 @@ return {
 	WinSeparator = { fg = p.gray2 }, -- the column separating vertically split windows
 	FoldColumn = { bg = p.bg, fg = p.subtext4 }, -- column where folds are displayed
 	SignColumn = { bg = p.bg, fg = p.subtext4 }, -- column where signs are displayed
-	IncSearch = { fg = p.black, bg = p.yellow }, -- 'incsearch' highlighting; also used for the text replaced with ":s///p"
-	CurSearch = { fg = p.black, bg = p.yellow }, -- 'cursearch' highlighting; also used for the text replaced with ":s///p"
+	IncSearch = { fg = p.black, bg = p.dark_purple }, -- 'incsearch' highlighting; also used for the text replaced with ":s///p"
+	CurSearch = { fg = p.black, bg = p.dark_purple }, -- 'cursearch' highlighting; also used for the text replaced with ":s///p"
 	LineNr = { fg = custom.text }, -- Line number for " =number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 	CursorLineNr = { fg = p.subtext1 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
-	MatchParen = { fg = p.yellow, underline = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match.
+	MatchParen = { fg = p.dark_purple, underline = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match.
 	ModeMsg = { fg = custom.text, bg = p.bg }, --' showmode' message (e.g., "-- INSERT --")
 	MoreMsg = { fg = u.lighten(p.magenta, 0.5, p.fg) }, -- more-prompt
 	NonText = { fg = p.subtext4 }, --'~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., > displayed when a double-wide character doesn't fit at the end of the line).
@@ -51,9 +51,9 @@ return {
 	Substitute = { fg = custom.text, bg = custom.search },
 	SpecialKey = { fg = p.subtext2 }, -- Meta and special keys listed with  =map, also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
 	SpellBad = { fg = p.orange, underline = true }, -- Word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.
-	SpellCap = { fg = p.yellow }, -- Word that should start with a capital. This will be combined with the highlighting used otherwise.
-	SpellLocal = { fg = p.yellow }, -- Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
-	SpellRare = { fg = p.yellow }, -- Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
+	SpellCap = { fg = p.dark_purple }, -- Word that should start with a capital. This will be combined with the highlighting used otherwise.
+	SpellLocal = { fg = p.dark_purple }, -- Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
+	SpellRare = { fg = p.dark_purple }, -- Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
 	StatusLine = { fg = custom.text, bg = p.bg }, -- status line of current window
 	StatusLineNC = { fg = custom.text, bg = p.bg }, -- status lines of not-current windows Note = if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 	StatusLineTerm = { fg = custom.text, bg = p.bg }, -- status line of current :terminal window
@@ -66,7 +66,7 @@ return {
 	Italic = { fg = p.blue, italic = true },
 	Visual = { bg = custom.selection }, -- Visual mode selection
 	VisualNOS = { bg = custom.selection }, -- Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
-	WarningMsg = { fg = p.yellow }, -- warning messages
+	WarningMsg = { fg = p.dark_purple }, -- warning messages
 	WildMenu = { fg = p.black, bg = p.purple }, -- current match in 'wildmenu' completion
 	Winbar = { fg = custom.text, bg = p.bg }, -- Winbar
 	WinbarNC = { fg = custom.text, bg = p.bg }, -- Winbar non-current windows.

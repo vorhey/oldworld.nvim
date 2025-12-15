@@ -2,7 +2,7 @@ local p = require("oldworld.palette")
 
 return {
     RainbowDelimiterRed = { fg = p.red, bg = p.bg },
-    RainbowDelimiterYellow = { fg = p.yellow, bg = p.bg },
+    RainbowDelimiterYellow = { fg = p.dark_purple, bg = p.bg },
     RainbowDelimiterBlue = { fg = p.blue, bg = p.bg },
     RainbowDelimiterOrange = { fg = p.orange, bg = p.bg },
     RainbowDelimiterGreen = { fg = p.green, bg = p.bg },

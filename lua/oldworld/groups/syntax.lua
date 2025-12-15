@@ -15,7 +15,7 @@ return {
 	String = { fg = p.soft_lavender } + styles.strings, -- a string constant: "this is a string"
 	Character = { fg = p.green }, -- a character constant: 'p', '\n'
 	Number = { fg = p.magenta }, -- a number constant: 234, 0xff
-	Boolean = { fg = p.yellow } + styles.booleans, -- a boolean constant: TRUE, false
+	Boolean = { fg = p.dark_purple } + styles.booleans, -- a boolean constant: TRUE, false
 	Float = { fg = p.magenta }, -- a floating point constant: 2.3e10
 	Identifier = { fg = p.pastel_orchid } + styles.identifiers, -- any variable name
 	Function = { fg = p.blue } + styles.functions, -- function name (also: methods for classes)
@@ -32,17 +32,17 @@ return {
 	Macro = { fg = p.red }, -- same as Define
 	PreCondit = { fg = p.red }, -- preprocessor #if, #else, #endif, etc.
 	Type = { fg = p.muted_purple } + styles.types, -- int, long, char, etc.
-	StorageClass = { fg = p.yellow }, -- static, register, volatile, etc.
+	StorageClass = { fg = p.dark_purple }, -- static, register, volatile, etc.
 	Structure = { fg = p.red }, -- struct, union, enum, etc.
-	Typedef = { fg = p.yellow }, -- A typedef
+	Typedef = { fg = p.dark_purple }, -- A typedef
 	Special = { fg = p.blue }, -- any special symbol
-	SpecialChar = { fg = p.yellow }, -- special character in a constant
-	Tag = { fg = p.yellow }, -- you can use CTRL-] on this
+	SpecialChar = { fg = p.dark_purple }, -- special character in a constant
+	Tag = { fg = p.dark_purple }, -- you can use CTRL-] on this
 	SpecialComment = { fg = p.subtext4 }, -- special things inside a comment
-	Debug = { fg = p.yellow }, -- debugging statements
+	Debug = { fg = p.dark_purple }, -- debugging statements
 	Underlined = { underline = true }, -- text that stands out, HTML links
 	Error = { fg = p.orange }, -- any erroneous construct
-	Todo = { fg = p.yellow }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+	Todo = { fg = p.dark_purple }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 	-- HTML
 	htmlArg = { fg = p.fg, italic = true }, -- attributes
 	htmlEndTag = { fg = p.subtext1 }, -- end tag />
@@ -54,7 +54,7 @@ return {
 	-- Diff
 	diffAdded = { fg = p.green },
 	diffRemoved = { fg = p.red },
-	diffChanged = { fg = p.yellow },
+	diffChanged = { fg = p.dark_purple },
 	diffOldFile = { fg = p.gray4 },
 	diffNewFile = { fg = p.fg },
 	diffFile = { fg = p.subtext4 },

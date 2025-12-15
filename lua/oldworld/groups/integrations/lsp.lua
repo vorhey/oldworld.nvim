@@ -10,7 +10,7 @@ return {
     ["@lsp.type.enumMember"] = { link = "@constant" },
     ["@lsp.type.escapeSequence"] = { link = "@string.escape" },
     ["@lsp.type.formatSpecifier"] = { link = "@punctuation.special" },
-    ["@lsp.type.interface"] = { fg = p.yellow },
+    ["@lsp.type.interface"] = { fg = p.dark_purple },
     ["@lsp.type.macro"] = { fg = p.magenta },
     ["@lsp.type.keyword"] = { link = "@keyword" },
     ["@lsp.type.namespace"] = { link = "@namespace" },
@@ -47,14 +47,14 @@ return {
     -- Diagnostics
     DiagnosticOk = { fg = p.green },
     DiagnosticError = { fg = p.red },
-    DiagnosticWarn = { fg = p.yellow },
+    DiagnosticWarn = { fg = p.dark_purple },
     DiagnosticInfo = { fg = p.purple },
     DiagnosticHint = { fg = p.cyan },
     DiagnosticSignHint = { fg = p.muted_purple },
     DiagnosticVirtualTextError = { fg = p.rose },
     DiagnosticUnnecessary = { fg = p.comment, undercurl = true },
     DiagnosticUnderlineError = { fg = p.red, underline = true },
-    DiagnosticUnderlineWarn = { fg = p.yellow, underline = true },
+    DiagnosticUnderlineWarn = { fg = p.dark_purple, underline = true },
     DiagnosticUnderlineInfo = { fg = p.purple, underline = true },
     DiagnosticUnderlineHint = { fg = p.cyan, underline = true },
 
@@ -62,5 +62,5 @@ return {
     LspReferenceWrite = { fg = p.purple, underline = true },
     LspReferenceText = { fg = p.purple, underline = true },
     LspReferenceRead = { fg = p.purple, underline = true },
-    LspSignatureActiveParameter = { fg = p.yellow, bold = true },
+    LspSignatureActiveParameter = { fg = p.dark_purple, bold = true },
 }

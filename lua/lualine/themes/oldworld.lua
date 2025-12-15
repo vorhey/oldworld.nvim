@@ -6,7 +6,7 @@ return {
 		b = { fg = p.fg, bg = p.gray2 },
 		c = { fg = p.fg, bg = p.gray1 },
 	},
-	command = { a = { fg = p.bg, bg = p.yellow, gui = "bold" } },
+	command = { a = { fg = p.bg, bg = p.dark_purple, gui = "bold" } },
 	insert = { a = { fg = p.bg, bg = p.purple, gui = "bold" } },
 	visual = { a = { fg = p.bg, bg = p.magenta, gui = "bold" } },
 	terminal = { a = { fg = p.bg, bg = p.green, gui = "bold" } },

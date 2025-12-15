@@ -9,7 +9,7 @@ return {
     CmpItemKindFunction = { fg = p.red },
     CmpItemKindVariable = { fg = p.purple },
     CmpItemKindEnum = { fg = p.green },
-    CmpItemKindSnippet = { fg = p.yellow },
+    CmpItemKindSnippet = { fg = p.dark_purple },
     CmpItemKindField = { fg = p.magenta },
     CmpItemKindConstant = { fg = p.orange },
     CmpItemKindMethod = { fg = p.cyan },

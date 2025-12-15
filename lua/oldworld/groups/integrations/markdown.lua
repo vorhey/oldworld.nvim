@@ -4,7 +4,7 @@ return {
     markdownH1 = { fg = p.purple, bold = true },
     markdownH2 = { fg = p.blue, bold = true },
     markdownH3 = { fg = p.green, bold = true },
-    markdownH4 = { fg = p.yellow, bold = true },
+    markdownH4 = { fg = p.dark_purple, bold = true },
     markdownH5 = { fg = p.red, bold = true },
     markdownH6 = { fg = p.magenta, bold = true },
     markdownHeadingDelimiter = { fg = p.subtext4 },
@@ -21,7 +21,7 @@ return {
     markdownBlockquote = { fg = p.fg },
     markdownBold = { fg = p.fg, bg = p.none, bold = true },
     markdownItalic = { fg = p.fg, bg = p.none, italic = true },
-    markdownCode = { fg = p.yellow },
-    markdownCodeBlock = { fg = p.yellow },
+    markdownCode = { fg = p.dark_purple },
+    markdownCodeBlock = { fg = p.dark_purple },
     markdownCodeDelimiter = { fg = p.subtext4 },
 }

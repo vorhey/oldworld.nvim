@@ -13,7 +13,7 @@ end, config.styles)
 return {
 	["@boolean"] = { fg = p.magenta, italic = true } + styles.booleans,
 	["@constructor"] = { fg = p.subtext3 },
-	["@constant.builtin"] = { fg = p.yellow },
+	["@constant.builtin"] = { fg = p.dark_purple },
 	["@keyword.function"] = { fg = p.purple } + styles.functions,
 	["@namespace"] = { fg = p.muted_purple },
 	["@parameter"] = { fg = p.muted_purple },
@@ -26,7 +26,7 @@ return {
 	["@string.regex"] = { fg = p.purple },
 	["@string.escape"] = { fg = p.magenta },
 	["@string.special.url"] = { fg = u.lighten(p.green, 0.5, p.fg), underline = true },
-	["@symbol"] = { fg = p.yellow },
+	["@symbol"] = { fg = p.dark_purple },
 	["@tag"] = { fg = p.red },
 	["@tag.attribute"] = { fg = p.periwinkle },
 	["@tag.delimiter"] = { fg = p.subtext1 },
