@@ -28,8 +28,8 @@ return {
 	WinSeparator = { fg = p.gray2 }, -- the column separating vertically split windows
 	FoldColumn = { bg = p.bg, fg = p.subtext4 }, -- column where folds are displayed
 	SignColumn = { bg = p.bg, fg = p.subtext4 }, -- column where signs are displayed
-	IncSearch = { fg = p.black, bg = p.dark_purple }, -- 'incsearch' highlighting; also used for the text replaced with ":s///p"
-	CurSearch = { fg = p.black, bg = p.dark_purple }, -- 'cursearch' highlighting; also used for the text replaced with ":s///p"
+	IncSearch = { fg = p.white, bg = p.dark_purple }, -- 'incsearch' highlighting; also used for the text replaced with ":s///p"
+	CurSearch = { fg = p.white, bg = p.dark_purple }, -- 'cursearch' highlighting; also used for the text replaced with ":s///p"
 	LineNr = { fg = custom.text }, -- Line number for " =number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 	CursorLineNr = { fg = p.subtext1 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 	MatchParen = { fg = p.dark_purple, underline = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match.
