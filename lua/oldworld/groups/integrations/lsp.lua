@@ -47,14 +47,14 @@ return {
     -- Diagnostics
     DiagnosticOk = { fg = p.green },
     DiagnosticError = { fg = p.red },
-    DiagnosticWarn = { fg = p.dark_purple },
+    DiagnosticWarn = { fg = p.yellow },
     DiagnosticInfo = { fg = p.purple },
     DiagnosticHint = { fg = p.cyan },
     DiagnosticSignHint = { fg = p.muted_purple },
     DiagnosticVirtualTextError = { fg = p.rose },
     DiagnosticUnnecessary = { fg = p.comment, undercurl = true },
     DiagnosticUnderlineError = { fg = p.red, underline = true },
-    DiagnosticUnderlineWarn = { fg = p.dark_purple, underline = true },
+    DiagnosticUnderlineWarn = { fg = p.yellow, underline = true },
     DiagnosticUnderlineInfo = { fg = p.purple, underline = true },
     DiagnosticUnderlineHint = { fg = p.cyan, underline = true },
 
