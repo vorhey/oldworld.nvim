@@ -77,6 +77,7 @@ local dark_palette = {
 	kind_gold = "#ffd88a",
 	kind_purple = "#d9cef8",
 	kind_indigo = "#5c7ad6",
+	dark_red = "#c90000",
 	dark_purple = "#F8BEBE",
 	soft_red = "#f7a6ab",
 	rose = "#ff9ea8",
