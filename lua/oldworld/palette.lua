@@ -17,7 +17,6 @@ local light_palette = {
 	black = "#27272a",
 	red = "#ea83a5",
 	green = "#90b99f",
-	yellow = "#fff200",
 	purple = "#7c59ba",
 	magenta = "#d15a9d",
 	orange = "#f5a191",
