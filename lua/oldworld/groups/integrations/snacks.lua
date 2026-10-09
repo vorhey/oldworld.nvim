@@ -1,5 +1,6 @@
 local p = require("oldworld.palette")
 local u = require("oldworld.utils.color_utils")
+local is_light = require("oldworld.config").variant == "light"
 
 return {
 	SnacksIndent = { fg = p.gray3 },
@@ -11,11 +12,11 @@ return {
 	SnacksDashboardFooter = { fg = p.purple, italic = true },
 	SnacksDashboardSpecial = { fg = u.lighten(p.purple, 0.5, p.fg), bold = true, italic = true },
 
-	-- Override Diff* groups for picker preview (transparent backgrounds)
-	DiffAdd = { fg = p.green, bg = p.none },
-	DiffDelete = { fg = p.red, bg = p.none },
-	DiffChange = { fg = p.orange, bg = p.none },
-	DiffText = { fg = p.orange, bg = p.none },
+	-- Keep light diff backgrounds: CodeDiff uses them instead of its dark fallbacks.
+	DiffAdd = not is_light and { fg = p.green, bg = p.none } or nil,
+	DiffDelete = not is_light and { fg = p.red, bg = p.none } or nil,
+	DiffChange = not is_light and { fg = p.orange, bg = p.none } or nil,
+	DiffText = not is_light and { fg = p.orange, bg = p.none } or nil,
 	Added = { fg = p.green, bg = p.none },
 	Removed = { fg = p.red, bg = p.none },
 	Changed = { fg = p.orange, bg = p.none },

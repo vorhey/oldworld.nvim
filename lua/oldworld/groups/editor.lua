@@ -2,6 +2,11 @@ local p = require("oldworld.palette")
 local u = require("oldworld.utils.color_utils")
 
 local DARKEN_AMOUNT = 0.20
+local is_light = require("oldworld.config").variant == "light"
+-- CodeDiff derives its line and character highlights from these backgrounds.
+local diff_amount = is_light and 0.12 or DARKEN_AMOUNT
+local diff_bg = is_light and p.white or p.bg
+local diff_fg = is_light and p.muted_purple or nil
 
 local custom = {
 	text = p.muted_purple or "#747991",
@@ -20,10 +25,13 @@ return {
 	CursorIM = { fg = p.black, bg = p.fg }, -- the character under the cursor
 	CursorLine = { bg = p.bg }, -- the screen line that the cursor is in when 'cursorline' is set
 	Directory = { fg = p.purple }, -- directory names (and other special names in listings)
-	DiffAdd = { bg = u.darken(p.green, DARKEN_AMOUNT, p.bg), fg = p.green }, -- diff mode: Added line
-	DiffChange = { bg = u.darken(p.orange, DARKEN_AMOUNT, p.bg), fg = p.orange }, -- diff mode: Changed line
-	DiffDelete = { bg = u.darken(p.red, DARKEN_AMOUNT, p.bg), fg = p.red }, -- diff mode: Deleted line
-	DiffText = { bg = p.orange, fg = u.darken(p.orange, DARKEN_AMOUNT, p.bg) }, -- diff mode: Changed text within a changed line
+	DiffAdd = { bg = u.blend(p.green, diff_bg, diff_amount), fg = diff_fg or p.green }, -- diff mode: Added line
+	DiffChange = { bg = u.blend(p.orange, diff_bg, diff_amount), fg = diff_fg or p.orange }, -- diff mode: Changed line
+	DiffDelete = { bg = u.blend(p.red, diff_bg, diff_amount), fg = diff_fg or p.red }, -- diff mode: Deleted line
+	DiffText = {
+		bg = is_light and u.blend(p.orange, diff_bg, 0.30) or p.orange,
+		fg = diff_fg or u.darken(p.orange, DARKEN_AMOUNT, p.bg),
+	}, -- diff mode: Changed text within a changed line
 	EndOfBuffer = { fg = p.bg },
 	ErrorMsg = { fg = p.orange }, -- error messages on the command line
 	VertSplit = { fg = p.gray2 }, -- the column separating vertically split windows
